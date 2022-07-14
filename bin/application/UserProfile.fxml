@@ -51,7 +51,6 @@
       <MenuButton fx:id="settings" layoutX="1784.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
         <items>
           <MenuItem fx:id="account" mnemonicParsing="false" text="Account" />
-          <MenuItem fx:id="preferences" mnemonicParsing="false" text="Gift Preferences" />
             <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
         </items>
          <graphic>

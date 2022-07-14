@@ -15,7 +15,6 @@ public class UPController {
 	private MenuItem signout;
 	@FXML
 	private Label USERNAME;
-
 	
 	private SceneController scenecontroller = new SceneController();
 	
