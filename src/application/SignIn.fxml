@@ -12,11 +12,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="1020.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="1020.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignInController">
    <children>
-      <TextField layoutX="807.0" layoutY="437.0" prefHeight="33.0" prefWidth="307.0" promptText="Username" />
-      <PasswordField layoutX="807.0" layoutY="487.0" prefHeight="33.0" prefWidth="307.0" promptText="Password" />
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="838.0" layoutY="537.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="245.0" text="Sign In">
+      <TextField fx:id="username" layoutX="807.0" layoutY="437.0" onAction="#processUser" prefHeight="33.0" prefWidth="307.0" promptText="Username" />
+      <PasswordField fx:id="password" layoutX="807.0" layoutY="487.0" onAction="#processUser" prefHeight="33.0" prefWidth="307.0" promptText="Password" />
+      <Button fx:id="SignIn" alignment="CENTER" contentDisplay="CENTER" layoutX="838.0" layoutY="537.0" mnemonicParsing="false" onAction="#signIn" prefHeight="33.0" prefWidth="245.0" text="Sign In">
          <effect>
             <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
                <bumpInput>
@@ -30,6 +30,13 @@
          <font>
             <Font name="Lucida Sans Regular" size="18.0" />
          </font></Button>
+      <Button fx:id="createacct" alignment="CENTER" contentDisplay="CENTER" layoutX="1008.0" layoutY="587.0" mnemonicParsing="false" onAction="#createAccount" text="Sign Up" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Sans Regular" size="12.0" />
+         </font>
+         <effect>
+            <Blend mode="OVERLAY" />
+         </effect></Button>
       <Circle fill="#0cbaff78" layoutX="960.0" layoutY="270.0" radius="109.0" stroke="#6afffac4" strokeType="OUTSIDE" strokeWidth="30.0">
          <effect>
             <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
@@ -46,13 +53,6 @@
             <Font name="Georgia" size="51.0" />
          </font>
       </Text>
-      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="1008.0" layoutY="587.0" mnemonicParsing="false" text="Sign Up" textAlignment="CENTER">
-         <font>
-            <Font name="Lucida Sans Regular" size="12.0" />
-         </font>
-         <effect>
-            <Blend mode="OVERLAY" />
-         </effect></Button>
       <Text layoutX="851.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Don't have an account?" textAlignment="CENTER">
          <font>
             <Font name="Lucida Sans Regular" size="13.0" />

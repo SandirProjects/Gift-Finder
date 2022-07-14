@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1020.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UPController">
+   <children>
+      <Circle fill="#0cbaff78" layoutX="960.0" layoutY="270.0" radius="109.0" stroke="#6afffac4" strokeType="OUTSIDE" strokeWidth="30.0">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+               <bumpInput>
+                  <Blend />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#8cdeff" />
+               </light>
+            </Lighting>
+         </effect></Circle>
+      <Text fill="WHITE" layoutX="901.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Gift Spot" textAlignment="CENTER" wrappingWidth="117.0625">
+         <font>
+            <Font name="Georgia" size="51.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="1236.0" layoutY="113.0" prefHeight="343.0" prefWidth="330.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="330.0" />
+        </content>
+      </ScrollPane>
+      <ScrollPane layoutX="795.0" layoutY="524.0" prefHeight="343.0" prefWidth="330.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="USERNAME" alignment="CENTER" prefHeight="48.0" prefWidth="330.0">
+                     <font>
+                        <Font size="30.0" />
+                     </font></Label>
+               </children></AnchorPane>
+         </content>
+      </ScrollPane>
+      <MenuButton fx:id="settings" layoutX="1784.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+        <items>
+          <MenuItem fx:id="account" mnemonicParsing="false" text="Account" />
+            <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
+        </items>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Resources/icons8-gear-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+   </children>
+</AnchorPane>
