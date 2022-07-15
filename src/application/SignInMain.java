@@ -11,8 +11,11 @@ public class SignInMain extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-	
-			Parent root = FXMLLoader.load(getClass().getResource("/application/SignIn.fxml"));
+			//TODO 
+			//USERPROFILE: add account GUI, add friends list, add search other users, add wishlist
+			//add open gift directory button
+			//GIFT DIRECTORY: add GUI, add button to open gift directory, add select preference to gift directorySS
+			Parent root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/SignIn.fxml"));
 			Scene scene = new Scene(root,1920,1020);
 			primaryStage.setScene(scene);
 			primaryStage.show();
