@@ -1,10 +1,10 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.text.Font;
-import javafx.stage.Stage;
 import models.UPModel;
 
 public class UPController {
@@ -27,18 +27,14 @@ public class UPController {
 		USERNAME.setText(userID + "'s Gift Preferences");
 	}
 	@FXML
-	public void processSignOut()
+	public void processSignOut(ActionEvent event)
 	{
-		Stage stage = (Stage)signout.getParentPopup().getOwnerWindow();
-		stage.close();
-		try{scenecontroller.newSignInPage();}catch(Exception e){e.printStackTrace();}
+		
+		try{scenecontroller.newSignInPage(event, signout);}catch(Exception e){e.printStackTrace();}
 	}
-	@FXML void processAccount()
+	@FXML 
+	public void processAccount(ActionEvent event)
 	{
-		Stage stage = (Stage)account.getParentPopup().getOwnerWindow();
-		stage.close();
-		try{scenecontroller.startAccount();}catch(Exception e){e.printStackTrace();}
+		try{scenecontroller.startAccount(event, account);}catch(Exception e){e.printStackTrace();}
 	}
-	
-
 }

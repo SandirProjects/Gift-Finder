@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.MenuItem;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -29,6 +30,7 @@ public class SceneController {
 		stage.initModality(Modality.APPLICATION_MODAL);
 		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
 		stage.showAndWait();
+		
 	}
 	@FXML
 	public void ErrorPopup2(ActionEvent event) throws IOException
@@ -88,17 +90,20 @@ public class SceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
-	public void newSignInPage() throws IOException
+	public void newSignInPage(ActionEvent event, MenuItem signout) throws IOException
 	{
+		Stage stage = (Stage)signout.getParentPopup().getOwnerWindow();
+		stage.close();
 		this.stage = new Stage();
 		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/SignIn.fxml"));
 		this.scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
 	}
-	@FXML
-	public void startAccount() throws IOException
+	public void startAccount(ActionEvent event, MenuItem account) throws IOException
 	{
+		Stage stage = (Stage)account.getParentPopup().getOwnerWindow();
+		stage.close();
 		this.stage = new Stage();
 		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/Account.fxml"));
 		this.scene = new Scene(root);

@@ -56,15 +56,7 @@ public class CAController {
 			}
 			else
 			{
-				boolean uservalidate = model.processUser(userID, passID);
-				if(uservalidate == true)
-				{
-					try {scenecontrol.ErrorPopup3(event);}catch(Exception e){e.printStackTrace();}
-				}
-				else if(uservalidate == false)
-				{
-					allowConfirmPW();
-				}
+				allowConfirmPW();
 			}
 		}
 	}
@@ -73,7 +65,7 @@ public class CAController {
 	{
 		confpassword = confirmpass.getText();
 		{
-			if(passID.compareTo(confpassword) == 0)
+			if(passID.compareTo(confpassword) == 0) 
 			{
 				model.addUser(userID, confpassword);
 				userID = "";

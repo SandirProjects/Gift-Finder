@@ -24,17 +24,6 @@ public class CAModel {
 	{
 		fileinteract.processSUP(UserProfileInfo);
 	}
-	public boolean processUser(String username, String password)
-	{
-		if(UserProfileInfo.containsKey(username) == false)
-		{
-			return false;
-		}
-		else
-		{
-			return true;
-		}
-	}
 	
 	public boolean findUser(String username)
 	{

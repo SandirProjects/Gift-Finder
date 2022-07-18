@@ -10,6 +10,7 @@ import application.FileInteract;
 public class SignInModel {
 	
 	public static Map<String,String> UserProfileInfo = new HashMap<String,String>();
+
 	private FileInteract fileinteract = new FileInteract();
 	
 	public Map<String,String> getMap()
