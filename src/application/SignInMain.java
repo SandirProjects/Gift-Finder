@@ -17,7 +17,7 @@ public class SignInMain extends Application {
 			//add open gift directory button
 			//GIFT DIRECTORY: add GUI, add button to open gift directory, add select preference to gift directorySS
 			Parent root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/SignIn.fxml"));
-			Scene scene = new Scene(root,1920,1020);
+			Scene scene = new Scene(root,1200,900);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
