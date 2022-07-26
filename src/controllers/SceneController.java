@@ -55,6 +55,28 @@ public class SceneController {
 		stage.showAndWait();
 	}
 	@FXML
+	public void ErrorPopup4(ActionEvent event) throws IOException
+	{
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/Error4.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.initModality(Modality.APPLICATION_MODAL);
+		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
+		stage.showAndWait();
+	}
+	@FXML
+	public void ErrorPopup5(ActionEvent event) throws IOException
+	{
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/Error5.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.initModality(Modality.APPLICATION_MODAL);
+		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
+		stage.showAndWait();
+	}
+	@FXML
 	public void startUserProfile(ActionEvent event) throws IOException
 	{
 		this.node = (Node)event.getSource();
@@ -109,6 +131,22 @@ public class SceneController {
 		this.scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+	}
+	public void startCNPW(ActionEvent event) throws IOException
+	{
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/CNPW.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.initModality(Modality.APPLICATION_MODAL);
+		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
+		stage.showAndWait();
+	}
+	public void closeCurrent(ActionEvent event) throws IOException
+	{
+		this.node = (Node)event.getSource();
+		this.stage = (Stage) node.getScene().getWindow();
+		stage.close();
 	}
 	
 }

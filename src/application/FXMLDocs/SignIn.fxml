@@ -87,7 +87,7 @@
       </Pane>
       <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
          <children>
-            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="600.0" fitWidth="639.0" layoutX="-101.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../Resources/gift(R).png" />
                </image>

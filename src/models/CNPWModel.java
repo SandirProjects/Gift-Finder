@@ -12,9 +12,9 @@ public class CNPWModel {
 	private Map<String,String> UserProfileInfo = SignInModel.UserProfileInfo;
 	private FileInteract fileinteract = new FileInteract();
 	
-	public void getUserProfileInfo() throws IOException
+	public Map<String,String> getUserProfileInfo()
 	{
-		fileinteract.processGUP(UserProfileInfo);
+		return UserProfileInfo;
 	}
 	public void setUserProfileInfo() throws IOException
 	{

@@ -15,7 +15,6 @@ public class UPController {
 	private MenuItem signout;
 	@FXML
 	private Label USERNAME;
-	
 	private SceneController scenecontroller = new SceneController();
 	
 	
@@ -37,4 +36,5 @@ public class UPController {
 	{
 		try{scenecontroller.startAccount(event, account);}catch(Exception e){e.printStackTrace();}
 	}
+	
 }

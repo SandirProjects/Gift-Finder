@@ -1,4 +1,4 @@
-package application;
+	 package application;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class FileInteract 
 {
-	public String filepath;
+	private String filepath;
 	
 	public String getFilePath()
 	{

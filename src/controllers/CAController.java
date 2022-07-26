@@ -80,5 +80,18 @@ public class CAController {
 			}
 		}
 	}
+	
+	@FXML
+	public void processCA(ActionEvent event)
+	{
+		if(confirmpass.isVisible() == false)
+		{
+			processUser(event);
+		}
+		else
+		{
+			processConfirmPass(event);
+		}
+	}
 }
 

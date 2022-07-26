@@ -1,105 +1,77 @@
 package controllers;
 
+import application.FileInteract;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
 import models.CNPWModel;
+import models.UPModel;
+
 
 public class CNPWController {
 	
+	String username = UPModel.userID;
+	String password = "";
+	@FXML 
+	private Label error;	
 	@FXML
-	private TextField username;
+	private Label newpasslbl;
 	@FXML
-	private PasswordField password;
+	private Label confpasslbl;
 	@FXML
-	private PasswordField newpassword;
+	private PasswordField oldpass;
 	@FXML
-	private PasswordField confirmpass;
+	private PasswordField newpass;
+	@FXML
+	private PasswordField confpass;
 	private CNPWModel model = new CNPWModel();
-	private SceneController scenecontrol = new SceneController();
-	String userID = "";
-	String passID = "";
-	String newpass = "";
-	String confpassword = "";
-	
+	private SceneController scenecontroller = new SceneController();
 	
 	@FXML
-	public void allowConfirmPW()
+	public void processOldPass(ActionEvent event)
 	{
-		confirmpass.setVisible(true);
-		confirmpass.requestFocus();
-	}
-	@FXML
-	public void allowNewPW() 
-	{
-		newpassword.setVisible(true);
-		newpassword.requestFocus();
-	}
-	@FXML
-	public void processUser(ActionEvent event)
-	{
-		userID = username.getText();
-		passID = password.getText();
-		if(userID == "" || passID == "")
+		password = oldpass.getText();
+		if(model.getUserProfileInfo().get(username).contains(password))
 		{
-			if(userID != "")
-			{
-				username.setText(userID);
-				password.requestFocus();
-			}
-			else if(passID != "")
-			{
-				password.setText(passID);
-				username.requestFocus();
-			}
-			return;
+			newpass.setVisible(true);
+			newpasslbl.setVisible(true);
+			newpass.requestFocus();
 		}
 		else
 		{
-			boolean usercheck = model.findUser(userID);
-			if(usercheck == false)
-			{
-				try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-			}
-			else
-			{
-				boolean uservalidate = model.processUser(userID, passID);
-				if(uservalidate == false)
-				{
-					try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-				}
-				else if(uservalidate == true)
-				{
-					allowNewPW();
-					passID = "";
-				}
-			}
+			try{scenecontroller.ErrorPopup4(event);}catch(Exception e) {e.printStackTrace();}
 		}
 	}
 	@FXML
 	public void processNewPass(ActionEvent event)
 	{
-		newpass = newpassword.getText();
-		allowConfirmPW();
+		if(!password.contentEquals(newpass.getText()))
+		{
+			password = newpass.getText();
+			confpass.setVisible(true);
+			confpasslbl.setVisible(true);
+			confpass.requestFocus();
+		}
+		else
+		{
+			try {scenecontroller.ErrorPopup5(event);}catch(Exception e) {e.printStackTrace();}
+		}
+		
 	}
 	@FXML
-	public void processConfirmPass(ActionEvent event)
+	public void processConfPass(ActionEvent event)
 	{
-		confpassword = confirmpass.getText();
+		String temp = confpass.getText();
+		if(password.contentEquals(temp))
 		{
-			if(newpass.compareTo(confpassword) == 0)
-			{
-				model.replaceUserPW(userID, confpassword);
-				userID = "";
-				passID = "";
-				newpass = "";
-				confpassword = "";
-			}
-			else
-			{
-				try {scenecontrol.ErrorPopup2(event);}catch(Exception e){e.printStackTrace();}
-			}
+			model.replaceUserPW(username, password);
+			try{scenecontroller.closeCurrent(event);}catch(Exception e) {e.printStackTrace();}
+		}
+		else
+		{
+			try {scenecontroller.ErrorPopup2(event);}catch(Exception e) {e.printStackTrace();}
 		}
 	}
+	
 }

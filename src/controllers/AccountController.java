@@ -1,5 +1,7 @@
 package controllers;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -17,7 +19,7 @@ public class AccountController {
 	private Button cpassword;
 	@FXML
 	private Button exit;
-	
+	private SceneController scenecontroller = new SceneController();
 	@FXML
 	public void initialize()
 	{
@@ -27,14 +29,14 @@ public class AccountController {
 	}
 	
 	@FXML
-	public void changeUsername(ActionEvent event)
+	public void changeUsername(ActionEvent event) throws IOException
 	{
 		
 	}
 	@FXML
-	public void changePassword(ActionEvent event)
+	public void changePassword(ActionEvent event) throws IOException
 	{
-		
+		scenecontroller.startCNPW(event);
 	}
 	@FXML
 	public void exit()
