@@ -11,7 +11,6 @@ import models.CNUNModel;
 import models.UPModel;
 
 public class CNUNController {
-	
 	@FXML
 	private PasswordField oldpass;
 	@FXML
@@ -24,9 +23,10 @@ public class CNUNController {
 	private Label confusernamelbl;
 	
 	private String password;
+	private String username;
+	private String confun;
 	private CNUNModel model = new CNUNModel();
 	private SceneController scenecontroller = new SceneController();
-	
 	
 	@FXML
 	public void processPW(ActionEvent event) throws IOException
@@ -43,6 +43,35 @@ public class CNUNController {
 			scenecontroller.ErrorPopup4(event);
 		}
 	}
+	@FXML
+	public void processNewUN(ActionEvent event) throws IOException
+	{
+		username = newusername.getText();
+		if(UPModel.userID.contentEquals(username))
+		{
+			scenecontroller.ErrorPopup3(event);
+		}
+		else
+		{
+			confusernamelbl.setVisible(true);
+			confusername.setVisible(true);
+			confusername.requestFocus();
+		}
+	}
+	@FXML
+	public void processConfUN(ActionEvent event) throws IOException
+	{
+		confun = confusername.getText();
+		if(confun.contentEquals(username))
+		{
+			model.replaceUsername(username, password);
+			scenecontroller.closeCurrent(event);
+		}
+		else
+		{
+			scenecontroller.ErrorPopup6(event);
+			confusername.setText("");
+		}
+	}
 	
-
 }

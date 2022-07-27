@@ -46,15 +46,11 @@ public class CNUNModel {
 			return true;
 		}
 	}
-	public void replaceUserPW(String username, String password)
+	public void replaceUsername(String username, String password)
 	{
-		UserProfileInfo.replace(username, password);
-		try {
-			setUserProfileInfo();
-		}catch(Exception e) {
-			e.printStackTrace();
-		}	
+		
+		System.out.println(SignInModel.UserProfileInfo);
+		try {setUserProfileInfo();}catch(Exception e){e.printStackTrace();}	
 	}
 	
-
 }

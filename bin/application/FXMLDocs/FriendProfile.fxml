@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #eff6fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="900.0" prefWidth="400.0" />
+      <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Resources/gift(L).png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0">
+               <image>
+                  <Image url="@../../../Resources/gift(R).png" />
+               </image>
+            </ImageView>
+            <MenuButton layoutX="278.0" layoutY="14.0" mnemonicParsing="false" text="ADD/REMOVE">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Add Friend" />
+                <MenuItem mnemonicParsing="false" text="Remove Friend" />
+              </items>
+            </MenuButton>
+         </children>
+      </Pane>
+      <Pane layoutX="400.0" prefHeight="900.0" prefWidth="400.0" style="-fx-background-color: #e4f3fd;">
+         <children>
+            <Circle centerX="200.0" fill="#0983cd78" layoutY="159.0" radius="109.0" stroke="#0983cdab" strokeType="OUTSIDE" strokeWidth="30.0">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="0.0" surfaceScale="0.0">
+                     <bumpInput>
+                        <Blend />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#8cc0ff" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Circle>
+            <Text fill="WHITE" layoutX="61.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GIFT SPOT" textAlignment="CENTER" wrappingWidth="278.0000030994415">
+               <font>
+                  <Font name="Georgia" size="51.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </Text>
+            <TitledPane animated="false" layoutX="25.0" layoutY="403.0" prefHeight="450.0" prefWidth="350.0" text="Wish List">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="350.0">
+                     <children>
+                        <ScrollPane prefHeight="425.0" prefWidth="350.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="330.0">
+                                 <children>
+                                    <Label prefHeight="600.0" prefWidth="335.0">
+                                       <font>
+                                          <Font name="Monospaced Regular" size="12.0" />
+                                       </font></Label>
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </TitledPane>
+            <TextField accessibleRole="IMAGE_VIEW" editable="false" layoutX="25.0" layoutY="355.0" mouseTransparent="true" prefHeight="33.0" prefWidth="350.0" text="User :">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+            <Label layoutX="89.0" layoutY="362.0" prefHeight="20.0" prefWidth="278.0" text="//will show actual username">
+               <font>
+                  <Font name="Monospaced Regular" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

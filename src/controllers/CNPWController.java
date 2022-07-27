@@ -32,7 +32,7 @@ public class CNPWController {
 	public void processOldPass(ActionEvent event)
 	{
 		password = oldpass.getText();
-		if(model.getUserProfileInfo().get(username).contains(password))
+		if(model.getUserProfileInfo().get(username).contentEquals(password))
 		{
 			newpass.setVisible(true);
 			newpasslbl.setVisible(true);
@@ -70,8 +70,8 @@ public class CNPWController {
 		}
 		else
 		{
-			try {scenecontroller.ErrorPopup2(event);}catch(Exception e) {e.printStackTrace();}
+			confpass.setText("");
+			try {scenecontroller.ErrorPopup2(event);}catch(Exception e) {e.printStackTrace();}	
 		}
 	}
-	
 }

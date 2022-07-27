@@ -22,7 +22,7 @@ public class UPController {
 	public void initialize()
 	{
 		String userID = UPModel.userID;
-		USERNAME.setFont(new Font("system", 25));
+		USERNAME.setFont(new Font("monospaced", 25));
 		USERNAME.setText(userID + "'s Gift Preferences");
 	}
 	@FXML

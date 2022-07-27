@@ -14,6 +14,18 @@ public class FileInteract
 	{
 		return filepath;
 	}
+	public void printFile(String filepath) throws IOException
+	{
+		File file = new File(filepath);
+		Scanner scan = new Scanner(file);
+		while(scan.hasNext()) 
+		{
+			String token = scan.next();
+			System.out.println(token);
+		}
+		scan.close();
+		
+	}
 	public void processGUP(Map<String,String> UserProfileInfo) throws IOException
 	{
 		File file = new File(filepath);
@@ -68,7 +80,7 @@ public class FileInteract
 		}
 		scan.close();
 	}
-	public void processSUP(Map<String,String> UserProfileInfo)
+	public void processSUP(Map<String,String> UserProfileInfo) throws IOException
 	{
 		File folder = new File("UserProfileData");
 		folder.mkdir();
