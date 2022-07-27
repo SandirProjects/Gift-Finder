@@ -76,6 +76,11 @@
                   <Font name="Georgia" size="12.0" />
                </font>
             </PasswordField>
+            <PasswordField fx:id="confirmpass" layoutX="47.0" layoutY="500.0" onAction="#processConfirmPass" prefHeight="33.0" prefWidth="307.0" promptText="Confirm Password:" visible="false">
+               <font>
+                  <Font name="Georgia" size="12.0" />
+               </font>
+            </PasswordField>
             <Button fx:id="createaccount" layoutX="78.0" layoutY="550.0" mnemonicParsing="false" onAction="#processCA" prefHeight="33.0" prefWidth="245.0" style="-fx-background-color: #389bd7;" text="Create account" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Georgia" size="16.0" />
@@ -97,6 +102,5 @@
             </Button>
          </children>
       </Pane>
-      <PasswordField fx:id="confirmpass" layoutX="447.0" layoutY="500.0" onAction="#processConfirmPass" prefHeight="33.0" prefWidth="307.0" promptText="Confirm Password:" visible="false" />
    </children>
 </AnchorPane>
