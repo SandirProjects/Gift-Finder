@@ -142,6 +142,16 @@ public class SceneController {
 		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
 		stage.showAndWait();
 	}
+	public void startCNUN(ActionEvent event) throws IOException
+	{
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/CNUN.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.initModality(Modality.APPLICATION_MODAL);
+		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
+		stage.showAndWait();
+	}
 	public void closeCurrent(ActionEvent event) throws IOException
 	{
 		this.node = (Node)event.getSource();

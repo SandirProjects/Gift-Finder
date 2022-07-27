@@ -31,7 +31,7 @@ public class AccountController {
 	@FXML
 	public void changeUsername(ActionEvent event) throws IOException
 	{
-		
+		scenecontroller.startCNUN(event);
 	}
 	@FXML
 	public void changePassword(ActionEvent event) throws IOException
@@ -39,9 +39,9 @@ public class AccountController {
 		scenecontroller.startCNPW(event);
 	}
 	@FXML
-	public void exit()
+	public void exit(ActionEvent event) throws IOException
 	{
-		
+		scenecontroller.startUserProfile(event);
 	}
 
 }
