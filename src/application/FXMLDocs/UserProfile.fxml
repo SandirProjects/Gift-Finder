@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,28 +38,46 @@
                   </ImageView>
                </graphic>
             </MenuButton>
-            <ScrollPane layoutX="35.0" layoutY="371.0" prefHeight="343.0" prefWidth="330.0">
+            <ScrollPane layoutX="25.0" layoutY="383.0" prefHeight="470.0" prefWidth="350.0">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="330.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="335.0" />
               </content>
             </ScrollPane>
+            <ToolBar layoutX="25.0" layoutY="350.0" prefHeight="33.0" prefWidth="350.0">
+               <items>
+                  <ButtonBar prefHeight="20.0" prefWidth="335.0">
+                     <buttons>
+                        <Label fx:id="USERNAME1" prefHeight="17.0" prefWidth="339.0" text="My Friends">
+                           <font>
+                              <Font name="Monospaced Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </buttons>
+                  </ButtonBar>
+               </items>
+            </ToolBar>
          </children>
       </Pane>
       <Pane prefHeight="900.0" prefWidth="400.0">
          <children>
-            <ScrollPane layoutX="35.0" layoutY="371.0" prefHeight="343.0" prefWidth="330.0">
+            <ScrollPane layoutX="25.0" layoutY="383.0" prefHeight="470.0" prefWidth="350.0">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="343.0" prefWidth="330.0">
-                     <children>
-                        <Label fx:id="USERNAME" alignment="CENTER" prefHeight="48.0" prefWidth="330.0">
-                           <font>
-                              <Font name="Monospaced Regular" size="30.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="335.0" />
                </content>
             </ScrollPane>
+            <ToolBar layoutX="25.0" layoutY="350.0" prefHeight="33.0" prefWidth="350.0">
+               <items>
+                  <ButtonBar prefHeight="20.0" prefWidth="335.0">
+                    <buttons>
+                        <Label fx:id="USERNAME" prefHeight="17.0" prefWidth="346.0">
+                           <font>
+                              <Font name="Monospaced Bold" size="14.0" />
+                           </font>
+                        </Label>
+                    </buttons>
+                  </ButtonBar>
+               </items>
+            </ToolBar>
          </children>
       </Pane>
       <Pane layoutX="400.0" prefHeight="900.0" prefWidth="400.0" style="-fx-background-color: #e4f3fd;">
@@ -79,7 +102,53 @@
                   <Glow level="0.5" />
                </effect>
             </Text>
+            <Button fx:id="editInterests" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="350.0" mnemonicParsing="false" onAction="#processEditInterests" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Edit Interests" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="0.46" specularExponent="40.0" surfaceScale="1.73">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <Glow level="1.0" />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="search" alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="400.0" mnemonicParsing="false" onAction="#processSearchFriends" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Find Friends" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="0.46" specularExponent="40.0" surfaceScale="1.73">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <Glow level="1.0" />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
          </children>
       </Pane>
+      <Text fill="#0983cd" layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="30.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
    </children>
 </AnchorPane>

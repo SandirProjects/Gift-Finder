@@ -72,6 +72,7 @@ public class CAController {
 				passID = "";
 				confpassword = "";
 				
+				try{scenecontrol.startChooseInterests(event);}catch(Exception e){e.printStackTrace();}
 				try{scenecontrol.startSignInPage(event);}catch(Exception e){e.printStackTrace();}
 			}
 			else
@@ -93,5 +94,7 @@ public class CAController {
 			processConfirmPass(event);
 		}
 	}
+	
+	
 }
 

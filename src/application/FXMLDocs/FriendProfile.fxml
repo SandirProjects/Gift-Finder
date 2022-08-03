@@ -6,7 +6,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
@@ -19,9 +19,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #eff6fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #eff6fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FriendController">
    <children>
-      <Pane prefHeight="900.0" prefWidth="400.0" />
+      <Pane prefHeight="900.0" prefWidth="400.0">
+         <children>
+            <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="ADD/REMOVE">
+              <items>
+                <MenuItem fx:id="add" mnemonicParsing="false" text="Add Friend" />
+                <MenuItem fx:id="remove" mnemonicParsing="false" text="Remove Friend" />
+              </items>
+            </MenuButton>
+         </children></Pane>
       <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Resources/gift(L).png" />
@@ -34,11 +42,18 @@
                   <Image url="@../../../Resources/gift(R).png" />
                </image>
             </ImageView>
-            <MenuButton layoutX="278.0" layoutY="14.0" mnemonicParsing="false" text="ADD/REMOVE">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Add Friend" />
-                <MenuItem mnemonicParsing="false" text="Remove Friend" />
-              </items>
+            <MenuButton fx:id="settings" layoutX="319.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+               <items>
+                  <MenuItem fx:id="account" mnemonicParsing="false" onAction="#processAccount" text="Account" />
+                  <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </MenuButton>
          </children>
       </Pane>
@@ -64,42 +79,41 @@
                   <Glow level="0.5" />
                </effect>
             </Text>
-            <TitledPane animated="false" layoutX="25.0" layoutY="403.0" prefHeight="450.0" prefWidth="350.0" text="Wish List">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="450.0" prefWidth="350.0">
-                     <children>
-                        <ScrollPane prefHeight="425.0" prefWidth="350.0">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="330.0">
-                                 <children>
-                                    <Label prefHeight="600.0" prefWidth="335.0">
-                                       <font>
-                                          <Font name="Monospaced Regular" size="12.0" />
-                                       </font></Label>
-                                 </children>
-                              </AnchorPane>
-                          </content>
-                        </ScrollPane>
-                     </children>
-                  </AnchorPane>
-              </content>
+            <TextField accessibleRole="IMAGE_VIEW" editable="false" layoutX="25.0" layoutY="340.0" mouseTransparent="true" prefHeight="33.0" prefWidth="350.0" text="User :">
                <font>
-                  <Font name="Monospaced Regular" size="14.0" />
-               </font>
-            </TitledPane>
-            <TextField accessibleRole="IMAGE_VIEW" editable="false" layoutX="25.0" layoutY="355.0" mouseTransparent="true" prefHeight="33.0" prefWidth="350.0" text="User :">
-               <font>
-                  <Font name="Monospaced Regular" size="14.0" />
+                  <Font name="Monospaced Bold" size="14.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="NONE" />
                </cursor>
             </TextField>
-            <Label layoutX="89.0" layoutY="362.0" prefHeight="20.0" prefWidth="278.0" text="//will show actual username">
+            <Label layoutX="91.0" layoutY="347.0" prefHeight="20.0" prefWidth="278.0" text="//will show actual username">
                <font>
                   <Font name="Monospaced Regular" size="14.0" />
                </font>
             </Label>
+            <ToolBar layoutX="25.0" layoutY="390.0" prefHeight="33.0" prefWidth="350.0">
+               <items>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Suggestions" wrappingWidth="182.13671875">
+                     <font>
+                        <Font name="Monospaced Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </items>
+            </ToolBar>
+            <ScrollPane layoutX="25.0" layoutY="423.0" prefHeight="445.0" prefWidth="350.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="335.0">
+                     <children>
+                        <Label fx:id="suggestions" alignment="TOP_LEFT" layoutX="3.0" layoutY="6.0" prefHeight="1450.0" prefWidth="330.0" text="//Suggested Items will show here">
+                           <font>
+                              <Font name="Monospaced Regular" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
          </children>
       </Pane>
    </children>

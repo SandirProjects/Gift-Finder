@@ -2,10 +2,10 @@ package controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
-import javafx.scene.text.Font;
-import models.UPModel;
+//import models.UPModel;
 
 public class UPController {
 	
@@ -14,6 +14,10 @@ public class UPController {
 	@FXML
 	private MenuItem signout;
 	@FXML
+	private Button search;
+	@FXML
+	private Button editInterests;
+	@FXML
 	private Label USERNAME;
 	private SceneController scenecontroller = new SceneController();
 	
@@ -21,9 +25,8 @@ public class UPController {
 	@FXML
 	public void initialize()
 	{
-		String userID = UPModel.userID;
-		USERNAME.setFont(new Font("monospaced", 25));
-		USERNAME.setText(userID + "'s Gift Preferences");
+		//String userID = UPModel.userID;
+		USERNAME.setText("My Interests");
 	}
 	@FXML
 	public void processSignOut(ActionEvent event)
@@ -35,6 +38,18 @@ public class UPController {
 	public void processAccount(ActionEvent event)
 	{
 		try{scenecontroller.startAccount(event, account);}catch(Exception e){e.printStackTrace();}
+	}
+	
+	@FXML 
+	public void processEditInterests(ActionEvent event)
+	{
+		try{scenecontroller.startChooseInterests(event);}catch(Exception e){e.printStackTrace();}
+	}
+	
+	@FXML 
+	public void processSearchFriends(ActionEvent event)
+	{
+		try{scenecontroller.startUserSearch(event);}catch(Exception e){e.printStackTrace();}
 	}
 	
 }

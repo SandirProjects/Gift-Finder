@@ -170,4 +170,30 @@ public class SceneController {
 		stage.close();
 	}
 	
+	@FXML
+	public void startChooseInterests(ActionEvent event) throws IOException
+	{
+		
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/ChooseInterests.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.initModality(Modality.APPLICATION_MODAL);
+		stage.initOwner((Stage)((Node)event.getSource()).getScene().getWindow());
+		stage.showAndWait();
+	}
+	
+	@FXML
+	public void startUserSearch(ActionEvent event) throws IOException
+	{
+		this.node = (Node)event.getSource();
+		this.stage = (Stage) node.getScene().getWindow();
+		stage.close();
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/UserSearch.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
 }

@@ -3,6 +3,8 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Blend?>
 <?import javafx.scene.effect.Glow?>
@@ -19,15 +21,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #eff6fb;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AccountController">
    <children>
-      <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
-         <children>
-            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Resources/gift(R).png" />
-               </image>
-            </ImageView>
-         </children>
-      </Pane>
       <Pane prefHeight="900.0" prefWidth="400.0">
          <children>
             <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
@@ -39,7 +32,7 @@
                <children>
                   <AnchorPane prefHeight="900.0" prefWidth="400.0" style="-fx-background-color: #e4f3fd;">
                      <children>
-                        <TextField accessibleRole="NODE" editable="false" layoutX="79.0" layoutY="435.0" mouseTransparent="true" prefHeight="33.0" prefWidth="250.0" text="User :">
+                        <TextField accessibleRole="NODE" editable="false" layoutX="75.0" layoutY="435.0" mouseTransparent="true" prefHeight="33.0" prefWidth="250.0" text="User :">
                            <font>
                               <Font name="Monospaced Regular" size="14.0" />
                            </font>
@@ -77,12 +70,12 @@
                               <Glow level="0.5" />
                            </effect>
                         </Text>
-                        <Label fx:id="acctusername" contentDisplay="CENTER" layoutX="143.0" layoutY="435.0" prefHeight="33.0" prefWidth="186.0" textFill="#0983cd">
+                        <Label fx:id="acctusername" contentDisplay="CENTER" layoutX="137.0" layoutY="435.0" prefHeight="33.0" prefWidth="186.0" textFill="#0983cd">
                            <font>
                               <Font name="Monospaced Regular" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="exit" layoutX="79.0" layoutY="585.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Exit" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="exit" layoutX="75.0" layoutY="585.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Home" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="Georgia" size="14.0" />
                            </font>
@@ -101,7 +94,7 @@
                               </Lighting>
                            </effect>
                         </Button>
-                        <Button fx:id="cpassword" layoutX="79.0" layoutY="535.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Change Password" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="cpassword" layoutX="75.0" layoutY="535.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Change Password" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="Georgia" size="14.0" />
                            </font>
@@ -120,7 +113,7 @@
                               </Lighting>
                            </effect>
                         </Button>
-                        <Button fx:id="cusername" layoutX="79.0" layoutY="485.0" mnemonicParsing="false" onAction="#changeUsername" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Change Username" textAlignment="CENTER" textFill="WHITE">
+                        <Button fx:id="cusername" layoutX="75.0" layoutY="485.0" mnemonicParsing="false" onAction="#changeUsername" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Change Username" textAlignment="CENTER" textFill="WHITE">
                            <font>
                               <Font name="Georgia" size="14.0" />
                            </font>
@@ -144,5 +137,26 @@
                </children>
             </Pane>
          </children></Pane>
+      <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Resources/gift(R).png" />
+               </image>
+            </ImageView>
+            <MenuButton fx:id="settings" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+               <items>
+                  <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

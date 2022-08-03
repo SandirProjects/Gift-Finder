@@ -9,9 +9,9 @@
    <children>
       <StackPane prefHeight="70.0" prefWidth="400.0">
          <children>
-            <Label text="Error4: Incorrect Password.">
+            <Label text="Error: Incorrect Password.">
                <font>
-                  <Font size="19.0" />
+                  <Font name="Georgia" size="19.0" />
                </font>
             </Label>
          </children>

@@ -9,9 +9,9 @@
    <children>
       <StackPane prefHeight="70.0" prefWidth="400.0">
          <children>
-            <Label text="Error5: This password is already in use.">
+            <Label text="Error: This password is already in use.">
                <font>
-                  <Font size="19.0" />
+                  <Font name="Georgia" size="19.0" />
                </font>
             </Label>
          </children>
