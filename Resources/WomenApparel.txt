@@ -1,0 +1,344 @@
+Dress
+Aline dress
+Tent dress
+Yoke dress
+Empire line dress
+Shift dress
+Dirndl dress
+Sheath dress
+Low or drop waist dress
+Tunic dress
+Princess seam dress
+Blouson dress
+Shirt waist dress
+Wrap around dress
+Peasant Dress
+Baby doll dress
+Body con dress
+Cocktail dress
+Debutante dress
+Skater dress
+Camisole dress
+Jumber dress
+Granny dress
+Harem dress
+Mermaid dress
+Maxi dress
+Apron dress
+Sweater dress
+Swing dress
+Tutu dress
+Sun Dress
+Little Black Dress
+Coat dress
+Corset dress
+Balloon Dress 
+Bouffant dress
+Paneled dress
+Handkerchief hem Dress
+Gathered dress
+Kaftan Dress 
+Pillowcase dress
+Slip Dress 
+Shirt dress
+Ball gown
+Party dress 
+Off Shoulder Dress
+One shoulder dress
+Strapless Dress
+Halterneck Dress
+Draped Dress
+Xray Dress
+Fit and flare dress
+Cape Dress
+Two color Dress
+Skirt
+A line skirt
+Pencil skirt
+Tube skirt
+Gathered skirt
+Mini Skirt
+Flared skirt
+Draped Skirt
+Layered skirt
+Circle skirt
+Gored skirt
+Godet skirt
+Trumpet skirt
+Wrap skirt
+Divided skirt
+Pleated skirt
+Asymmetrical Hem skirt
+Bubble Skirt
+Balloon Skirt
+Yoke Skirt
+Tulip skirt
+Tiered skirt
+Booty shorts
+Boy shorts
+Jamaican shorts
+Bermuda shorts
+Knee length shorts
+Pedal pusher shorts
+Toreador shorts
+Capri
+Boyfriend shorts
+Chino shorts
+Cut off shorts
+Wrap shorts
+Cargo Shorts
+Slipshort
+Skorts
+Boxer shorts
+Board shorts
+Knee hugger shorts
+Straight leg jeans
+Skinny jeans
+Tapered jeans
+Boot Cut Jeans
+Flared jeans
+Baggy jeans 
+Mom jeans
+Boyfriend jeans
+Stovepipe jeans 
+Cigarette jeans
+Kick flare jeans
+Bell bottom jeans 
+Relaxed fit
+Classic fit jeans
+Slim Fit
+Straight Fit jeans
+Stretch jeans
+Cargo Fit
+Loose fit 
+Trouser fit
+Easy fit
+Regular Rise
+Lowrise jeans
+Brazilian Low Rise Jeans
+High Waist jeans
+Midrise  jeans
+Skimmer
+Cropped jeans
+Ankle length jeans
+Capri
+Gaucho
+Retro jeans
+Sand blasted jeans 
+Dirty washed jeans 
+Tinted jeans 
+Slub
+Whisker washed jeans 
+Ripped jeans
+Frayed jeans
+Carpenter jeans
+Corded jeans
+Lace-up jeans
+Pintuck jeans 
+Cuffed jeans
+Asymmetrical top
+Off shoulder top 
+Batwing top
+Bralette top
+Boxy top
+Blouson top
+Body suit top
+Bustier top
+Camisole top
+Cape top
+Cardigans 
+Sweaters 
+Crop top
+Choker top
+Corset top
+Collar top
+Cold-shouldered top
+Draped blouse
+Empire line top
+Flashdance top
+Halter top 
+Henley neck top
+High Low top
+Kaftan top
+Keyhole top
+Lace up top
+Layered top
+Maxi Top
+One shoulder top
+Peasant top
+Poncho
+Peplum Top
+Princess line top
+Raglan sleeve top
+Spaghetti strap top
+Sweatshirt
+Swing top
+Shirt 
+Smock top
+Shell top
+Tie front tops
+Tank top
+Tube top
+Tunic top
+T-shirt
+Wrap top
+X-ray top
+Yoke top
+Step hem top
+Tiered bottom top
+Y2k top
+Anorak
+Baseball jackets
+Bed jackets
+Blazer Jacket
+Bolero Jacket
+Bomber Jacket
+Cardigan Jacket
+Chanel Jacket
+Cropped jacket
+Dinner jacket
+Duster jacket
+Jardigan
+Kimono Jacket
+Motorcycle jacket
+Notch collar jacket
+Rain Jacket
+Running jacket
+Safari jacket
+Shirt Jacket
+Shawl collar jacket
+Soft Jackets
+Shrugs
+Swacket
+Suit jacket
+Trucker Jacket
+Tuxedo jacket
+Waistcoat
+Waterfall collar jackets 
+Windbreaker
+Dress pants
+Overalls
+Culottes
+Harem pants
+Baggy pants
+Flared pants
+Tights
+Punk Pants
+Stirrup pants
+Cargo pants
+Fatigue Trousers
+Stovepipe pants
+Bloomers
+Body tights
+Bodysuit
+Bra
+Sports Bra
+Brallete
+Bustier
+Camisole
+Corsets
+Chemise
+Garter belt
+Petticoat 
+Shapers 
+Ballet flat shoes
+Ballerina shoes
+Bathroom slippers
+Birkenstock Footwear
+Block heel shoes
+Boots
+Brogue shoes
+Canvas shoes
+Chelsea boots
+Clogs shoes
+Cowboy boots
+Crocs™ shoes
+Converse shoes
+Dress Shoes
+Espadrille
+Flats
+Gladiator footwear
+Hiking shoes
+Chunky boots
+Jellies
+Kitten heel shoes
+Loafer shoes
+Mary jane shoes
+Moccasins
+Mule shoes
+Over the knee boots
+Oxford shoe
+Peeptoes
+Platform shoes
+Platform flipflops
+Slippers
+Pump shoes
+Running shoes
+Sandals
+Slides
+Sneakers
+Slingback shoes
+Slip-ons 
+Snow boots
+Stiletto shoes 
+Suede Shoes
+Wedge shoes
+Wallet
+Beach bag
+Wristlet
+Hobo bag
+Minaudiere
+Clutch
+Quilted bag
+Sling bag
+Satchel
+Shoulder bag
+Wetsuit
+V-neck one-piece
+Swim dress
+Strapless one-piece
+One-shoulder
+Long-sleeve one-piece			
+Cover-up
+Bandeau top
+Cutout
+Halter top
+Tankini
+Triangle top
+Longline
+Cheeky bottom
+High-waist bottom
+Jammers
+Swim briefs
+Thong bikini
+No show socks
+Anklet socks
+Mid calf socks
+Crew length socks
+Over the Calf socks
+Knee high socks
+Knee socks
+Over the knee socks 
+Thigh high socks
+Grip socks 
+Compression socks
+Loafer socks
+Leg warmer socks 
+Liner socks
+Bikini Panty  
+Boy Shorts
+Briefs
+Booty Shorts
+Butt lifter Panty
+Cheeky Panty
+G string panties 
+High Waist Brief Shaper 
+High cut briefs 
+Hipster 
+Maternity panties
+Open Crotch Panty
+Seamless panties
+Athletic underwear
+Stick-on panties 
+Thong 
+Teddy
