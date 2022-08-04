@@ -196,4 +196,17 @@ public class SceneController {
 		stage.show();
 	}
 	
+	@FXML
+	public void startFriendProfile(ActionEvent event) throws IOException
+	{
+		this.node = (Node)event.getSource();
+		this.stage = (Stage) node.getScene().getWindow();
+		stage.close();
+		this.stage = new Stage();
+		this.root = FXMLLoader.load(getClass().getResource("/application/FXMLDocs/FriendProfile.fxml"));
+		this.scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
+	
 }

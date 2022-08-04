@@ -1,4 +1,4 @@
-	 package application;
+package application;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -9,6 +9,9 @@ import java.util.Scanner;
 public class FileInteract 
 {
 	private String filepath;
+	private File folder = new File("UserProfileData");
+	private File file;
+	
 	
 	public String getFilePath()
 	{
@@ -82,9 +85,11 @@ public class FileInteract
 	}
 	public void processSUP(Map<String,String> UserProfileInfo) throws IOException
 	{
-		File folder = new File("UserProfileData");
 		folder.mkdir();
-		File file = new File(folder, "UserProfileData.txt");
+		file = new File(folder, "UserProfileData.txt");
+		/*File folder = new File("UserProfileData");
+		folder.mkdir();
+		File file = new File(folder, "UserProfileData.txt");*/
 		try
 		{
 			file.createNewFile();
@@ -102,4 +107,5 @@ public class FileInteract
 		}catch(Exception e){e.printStackTrace();}
 		filepath = file.getAbsolutePath();
 	}
+	
 }

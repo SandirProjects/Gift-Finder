@@ -27,8 +27,7 @@ public class AccountController {
 	@FXML
 	public void initialize()
 	{
-		String userID = UPModel.userID;
-		acctusername.setText(userID);
+		acctusername.setText(UPModel.userID);
 		acctusername.setTextFill(Color.BLUE);
 	}
 	
@@ -36,6 +35,7 @@ public class AccountController {
 	public void changeUsername(ActionEvent event) throws IOException
 	{
 		scenecontroller.startCNUN(event);
+		this.initialize();
 	}
 	@FXML
 	public void changePassword(ActionEvent event) throws IOException

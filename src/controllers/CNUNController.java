@@ -47,6 +47,7 @@ public class CNUNController {
 	public void processNewUN(ActionEvent event) throws IOException
 	{
 		username = newusername.getText();
+		System.out.println(username + " " + UPModel.userID);
 		if(UPModel.userID.contentEquals(username))
 		{
 			scenecontroller.ErrorPopup3(event);
@@ -61,6 +62,7 @@ public class CNUNController {
 	@FXML
 	public void processConfUN(ActionEvent event) throws IOException
 	{
+		
 		confun = confusername.getText();
 		if(confun.contentEquals(username))
 		{

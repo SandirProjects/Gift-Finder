@@ -11,6 +11,7 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -141,5 +142,13 @@
             </Button>
          </children>
       </Pane>
+      <Text fill="#0983cd" layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Regular" size="30.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Text>
    </children>
 </AnchorPane>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
@@ -11,6 +12,7 @@
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -87,7 +89,7 @@
                   <Cursor fx:constant="NONE" />
                </cursor>
             </TextField>
-            <Label layoutX="91.0" layoutY="347.0" prefHeight="20.0" prefWidth="278.0" text="//will show actual username">
+            <Label fx:id="friend" layoutX="91.0" layoutY="347.0" prefHeight="20.0" prefWidth="278.0">
                <font>
                   <Font name="Monospaced Regular" size="14.0" />
                </font>
@@ -101,11 +103,11 @@
                   </Text>
                </items>
             </ToolBar>
-            <ScrollPane layoutX="25.0" layoutY="423.0" prefHeight="445.0" prefWidth="350.0">
+            <ScrollPane layoutX="25.0" layoutY="423.0" prefHeight="430.0" prefWidth="350.0">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1500.0" prefWidth="335.0">
                      <children>
-                        <Label fx:id="suggestions" alignment="TOP_LEFT" layoutX="3.0" layoutY="6.0" prefHeight="1450.0" prefWidth="330.0" text="//Suggested Items will show here">
+                        <Label fx:id="suggestions" alignment="TOP_LEFT" layoutX="3.0" layoutY="6.0" prefHeight="1450.0" prefWidth="330.0">
                            <font>
                               <Font name="Monospaced Regular" size="12.0" />
                            </font>
@@ -114,6 +116,25 @@
                   </AnchorPane>
               </content>
             </ScrollPane>
+            <Button fx:id="exit" alignment="CENTER" layoutX="75.0" layoutY="860.0" mnemonicParsing="false" onAction="#exit" prefHeight="33.0" prefWidth="250.0" style="-fx-background-color: #389bd7;" text="Home " textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="14.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="0.46" specularExponent="40.0" surfaceScale="1.73">
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <Glow level="1.0" />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
          </children>
       </Pane>
    </children>

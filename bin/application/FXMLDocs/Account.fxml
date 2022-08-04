@@ -28,7 +28,27 @@
                   <Image url="@../../../Resources/gift(L).png" />
                </image>
             </ImageView>
-            <Pane layoutX="400.0" prefHeight="900.0" prefWidth="400.0">
+         </children></Pane>
+      <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
+         <children>
+            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Resources/gift(R).png" />
+               </image>
+            </ImageView>
+            <MenuButton fx:id="settings" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
+               <items>
+                  <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Resources/gear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <Pane layoutX="-400.0" prefHeight="900.0" prefWidth="400.0">
                <children>
                   <AnchorPane prefHeight="900.0" prefWidth="400.0" style="-fx-background-color: #e4f3fd;">
                      <children>
@@ -136,26 +156,6 @@
                   </AnchorPane>
                </children>
             </Pane>
-         </children></Pane>
-      <Pane layoutX="800.0" prefHeight="900.0" prefWidth="400.0">
-         <children>
-            <ImageView fitHeight="600.0" fitWidth="700.0" layoutX="-164.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../../Resources/gift(R).png" />
-               </image>
-            </ImageView>
-            <MenuButton fx:id="settings" layoutX="317.0" layoutY="14.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0">
-               <items>
-                  <MenuItem fx:id="signout" mnemonicParsing="false" onAction="#processSignOut" text="Sign Out" />
-               </items>
-               <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../Resources/gear.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </MenuButton>
          </children>
       </Pane>
    </children>
