@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
+import models.UPModel;
 //import models.UPModel;
 
 public class UPController {
@@ -19,14 +20,19 @@ public class UPController {
 	private Button editInterests;
 	@FXML
 	private Label USERNAME;
+	@FXML
+	private Label friends;
 	private SceneController scenecontroller = new SceneController();
 	
 	
 	@FXML
 	public void initialize()
 	{
-		//String userID = UPModel.userID;
 		USERNAME.setText("My Interests");
+		if (UPModel.friends.isEmpty())
+			friends.setText("You are not follwoing anyone :(");
+		else
+			friends.setText(UPModel.friendsToString());
 	}
 	@FXML
 	public void processSignOut(ActionEvent event)

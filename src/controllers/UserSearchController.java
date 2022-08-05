@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import models.FriendModel;
+import models.UPModel;
 import models.UserSearchModel;
 
 public class UserSearchController {
@@ -70,10 +71,17 @@ public class UserSearchController {
 		friendLink.setVisible(false);
 		if (model.findUsers(userEntered) != "")
 		{
-			foundUser.setText("");
-			friendLink.setVisible(true);
-			friendLink.setText(userEntered);
-			FriendModel.userID = userEntered;
+			if (userEntered.equals(UPModel.userID))
+			{
+				foundUser.setText("*" + userEntered + " (me)");
+			}
+			else
+			{
+				foundUser.setText("");
+				friendLink.setVisible(true);
+				friendLink.setText(userEntered);
+				FriendModel.userID = userEntered;
+			}
 		}
 			
 		else
@@ -85,4 +93,5 @@ public class UserSearchController {
 	{
 		try {scenecontroller.startFriendProfile(event);} catch (IOException e) {e.printStackTrace();}
 	}
+	
 }

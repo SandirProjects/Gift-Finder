@@ -51,17 +51,12 @@
                   <Glow level="0.5" />
                </effect>
             </Text>
-            <CheckBox layoutX="300.0" layoutY="440.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="172.0" text="Automotive">
+            <CheckBox layoutX="50.0" layoutY="480.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Kitchen">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="50.0" layoutY="440.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Kitchen">
-               <font>
-                  <Font name="Monospaced Regular" size="20.0" />
-               </font>
-            </CheckBox>
-            <CheckBox layoutX="300.0" layoutY="340.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Baby Products">
+            <CheckBox layoutX="300.0" layoutY="340.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Men's Apparel">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
@@ -71,22 +66,17 @@
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="300.0" layoutY="540.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="187.0" text="Video Games">
+            <CheckBox layoutX="300.0" layoutY="480.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="187.0" text="Video Games">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="850.0" layoutY="440.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Books">
+            <CheckBox layoutX="600.0" layoutY="480.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="172.0" text="Tools">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="600.0" layoutY="540.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="172.0" text="Tools">
-               <font>
-                  <Font name="Monospaced Regular" size="20.0" />
-               </font>
-            </CheckBox>
-            <CheckBox layoutX="50.0" layoutY="540.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="164.0" text="Sports">
+            <CheckBox layoutX="50.0" layoutY="630.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="164.0" text="Sports">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
@@ -96,12 +86,7 @@
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="850.0" layoutY="540.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="229.0" text="Beauty">
-               <font>
-                  <Font name="Monospaced Regular" size="20.0" />
-               </font>
-            </CheckBox>
-            <CheckBox layoutX="600.0" layoutY="440.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Jewelry">
+            <CheckBox layoutX="850.0" layoutY="480.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Jewelry">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
@@ -125,22 +110,17 @@
                   </Lighting>
                </effect>
             </Button>
-            <CheckBox layoutX="50.0" layoutY="640.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="204.0" text="Men's Apparel">
+            <CheckBox layoutX="300.0" layoutY="630.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Lawn and Garden">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="300.0" layoutY="640.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Lawn and Garden">
+            <CheckBox layoutX="600.0" layoutY="630.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Snacks">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </CheckBox>
-            <CheckBox layoutX="600.0" layoutY="640.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Lawn and Garden">
-               <font>
-                  <Font name="Monospaced Regular" size="20.0" />
-               </font>
-            </CheckBox>
-            <CheckBox layoutX="850.0" layoutY="640.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Pets">
+            <CheckBox layoutX="850.0" layoutY="630.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="221.0" text="Pets">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>

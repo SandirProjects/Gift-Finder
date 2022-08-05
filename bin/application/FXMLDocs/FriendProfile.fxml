@@ -25,10 +25,10 @@
    <children>
       <Pane prefHeight="900.0" prefWidth="400.0">
          <children>
-            <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="ADD/REMOVE">
+            <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="FOLLOW/UNFOLLOW">
               <items>
-                <MenuItem fx:id="add" mnemonicParsing="false" text="Add Friend" />
-                <MenuItem fx:id="remove" mnemonicParsing="false" text="Remove Friend" />
+                <MenuItem fx:id="follow" mnemonicParsing="false" onAction="#processFollow" text="FOLLOW" />
+                <MenuItem fx:id="unfollow" mnemonicParsing="false" onAction="#processUnfollow" text="UNFOLLOW" />
               </items>
             </MenuButton>
          </children></Pane>

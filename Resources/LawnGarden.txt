@@ -1,0 +1,80 @@
+Garden Trowel
+Pointed Shovel
+Garden Spade
+Transplanting Spade
+Mini Pointed Shovel
+Mini Square Shovel
+Spear-Head Spade
+Root Assassin Shovel
+Root Slayer Shovel
+Metal Scoop Shovel
+Trenching Spade
+Drain Spade
+Hand Weeder
+Trowel Weeder
+Cobrahead Weeder
+Loop Weeder
+Wrotter
+Weeding Fork
+Grampa’s Weeder
+Claw Weeder
+Weasel WeedPopper
+Cape Cod Weeder
+Japanese Weeding Sickle
+Long-Handled Blade Weeder
+Dandelion Digger
+Korean Homi
+Handy Handheld Hoe
+Oscillating Scuffle Cultivator Hoe
+Cultivator Hoe
+Crack Weeder
+Mattock
+Weed Trimmer
+Robot Weeder
+Garden Scissors
+Garden Snips
+Pruning Shears/Secateurs
+Floral Shears
+Thorn Remover
+Loppers
+Hedge Trimmer
+Hedge Shears
+Grass Shears
+Hori Hori Garden Knife
+Box Cutter
+Reel Mower
+Electric Mower
+Edger
+Power Edger
+Pruning Saw
+Harvest Sickle
+Billhook
+Hatchet
+Splitting Axe
+Leaf Rake
+Groundskeeper Rake
+Bow Rake
+Landscaping Rake
+Thatch Rake
+Power Dethatcher
+Shrub Rake
+Hand Rake
+Leaf Blower
+Watering Can
+Indoor Watering Can
+Garden Hose
+Spray Nozzle 
+Hose Washers
+Hose Timer
+Drip Irrigation
+Sprinkler
+Gardening Gloves
+Kneeling Stool
+Kneeling Pad
+Knee Pads
+Tool Belt
+Wheelbarrow
+Garden Cart
+Carbide File
+Mallet
+Lumber Pencil

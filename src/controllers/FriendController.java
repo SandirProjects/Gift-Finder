@@ -1,6 +1,5 @@
 package controllers;
 
-import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,13 +8,14 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.paint.Color;
 import models.FriendModel;
+import models.UPModel;
 
 public class FriendController {
 
 	@FXML
-	private MenuItem remove;
+	private MenuItem unfollow;
 	@FXML
-	private MenuItem add;
+	private MenuItem follow;
 	@FXML
 	private MenuItem account;
 	@FXML
@@ -47,9 +47,22 @@ public class FriendController {
 	}
 	
 	@FXML
-	public void exit(ActionEvent event) throws IOException
+	public void exit(ActionEvent event)
 	{
-		scenecontroller.startUserProfile(event);
+		try{scenecontroller.startUserProfile(event);}catch(Exception e){e.printStackTrace();}
 	}
 	
+	@FXML 
+	public void processFollow(ActionEvent event)
+	{
+		if (!UPModel.friends.contains(friend.getText()))
+			UPModel.friends.add(friend.getText());
+	}
+	
+	@FXML 
+	public void processUnfollow(ActionEvent event)
+	{
+		if (UPModel.friends.contains(friend.getText()))
+			UPModel.friends.remove(friend.getText());
+	}
 }

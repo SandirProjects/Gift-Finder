@@ -1,0 +1,79 @@
+Aloha Shirt
+Baseball shirt
+Camp shirt
+Sports shirts
+Dress shirt
+Epaulette shirt
+Flannel shirt
+Granddad shirt
+Golf shirts
+Henley shirt
+Oxford shirt
+Jersey shirt
+Night Shirt
+Western shirt
+Polo shirts
+Sweatshirt
+T-shirt
+Tunic shirt
+Tuxedo shirt
+Undershirt 
+Wifebeater
+Dress Pants
+Khakis
+Straight Leg Jeans
+Straight Taper Jeans
+Slim Straight Jeans
+Slim Taper Jeans
+Bootcut Jeans
+Relaxed Straight Jeans
+Relaxed Taper Jeans
+Wide-Leg Jeans
+Drawstring Trousers
+Slim-Fit Trousers
+Wool Trousers
+Relaxed Leg Trousers
+Flannel Trousers
+Joggers
+Cropped Trousers
+Cargo Pants
+High-Waisted Trousers
+Pleated Trousers
+Tracksuit Bottoms
+Leather Pants
+Sweatpants
+Corduroy Pants
+Pajama Pants
+Dress Shoes
+Loafers
+Sneakers
+Boat shoes
+Sandals
+Slip-On Sneakers
+Chelsea boots
+Brogue boots
+Slides
+Crocs
+Beanie
+Fedora
+Cowboy hat
+Bucket hat
+Beret
+Boater hat
+Ascot
+No show socks
+Anklet socks
+Mid calf socks
+Crew length socks
+Over the Calf socks
+Knee high socks
+Knee socks
+Swimming Trunks
+Cargo Shorts
+Retro Sports Shorts
+Pleated Shorts
+Printed Shorts
+Drawstring Shorts
+Denim Shorts
+Tailored Shorts
+
