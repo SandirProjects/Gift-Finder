@@ -2,6 +2,7 @@ package models;
 
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 import application.FileInteract;
@@ -9,10 +10,10 @@ import application.FileInteract;
 
 public class CNPWModel {
 	
-	private Map<String,String> UserProfileInfo = SignInModel.UserProfileInfo;
+	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
 	private FileInteract fileinteract = new FileInteract();
 	
-	public Map<String,String> getUserProfileInfo()
+	public Map<String, UPModel/*String*/> getUserProfileInfo()
 	{
 		return UserProfileInfo;
 	}
@@ -24,7 +25,8 @@ public class CNPWModel {
 	{
 		if(UserProfileInfo.containsKey(username) == true)
 		{
-			if(UserProfileInfo.get(username) == password)
+			//if(UserProfileInfo.get(username) == password)
+			if (UserProfileInfo.get(username).userPass.equals(password))
 			{
 				return true;
 			}
@@ -52,7 +54,8 @@ public class CNPWModel {
 	}
 	public void replaceUserPW(String username, String password)
 	{
-		UserProfileInfo.replace(username, password);
+		//UserProfileInfo.replace(username, password);
+		UserProfileInfo.get(username).userPass = password;
 		try {
 			setUserProfileInfo();
 		}catch(Exception e) {

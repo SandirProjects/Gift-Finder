@@ -6,12 +6,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import models.CNPWModel;
-import models.UPModel;
+import models.SignInModel;
 
 
 public class CNPWController {
 	
-	String username = UPModel.userID;
+	String username =  SignInModel.curUsername;
 	String password = "";
 	@FXML 
 	private Label error;	
@@ -32,7 +32,8 @@ public class CNPWController {
 	public void processOldPass(ActionEvent event)
 	{
 		password = oldpass.getText();
-		if(model.getUserProfileInfo().get(username).contentEquals(password))
+		//if(model.getUserProfileInfo().get(username).contentEquals(password))
+		if(model.getUserProfileInfo().get(username).userPass.equals(password))
 		{
 			newpass.setVisible(true);
 			newpasslbl.setVisible(true);

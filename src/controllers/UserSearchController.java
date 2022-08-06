@@ -1,7 +1,7 @@
  package controllers;
 
 import java.io.IOException;
-
+import java.util.HashMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import models.FriendModel;
+import models.SignInModel;
 import models.UPModel;
 import models.UserSearchModel;
 
@@ -31,7 +32,8 @@ public class UserSearchController {
 	@FXML
 	private Hyperlink friendLink;
 	private String userEntered;
-	
+	private HashMap<String, UPModel> UserProfileInfo = SignInModel.UserProfileInfo;
+	private UPModel profileModel = UserProfileInfo.get(SignInModel.curUsername);
 	
 	private SceneController scenecontroller = new SceneController();
 	@FXML
@@ -43,7 +45,6 @@ public class UserSearchController {
 	@FXML
 	public void processSignOut(ActionEvent event)
 	{
-		
 		try{scenecontroller.newSignInPage(event, signout);}catch(Exception e){e.printStackTrace();}
 	}
 	@FXML 
@@ -71,7 +72,7 @@ public class UserSearchController {
 		friendLink.setVisible(false);
 		if (model.findUsers(userEntered) != "")
 		{
-			if (userEntered.equals(UPModel.userID))
+			if (userEntered.equals(profileModel.userID))
 			{
 				foundUser.setText("*" + userEntered + " (me)");
 			}

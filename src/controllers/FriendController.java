@@ -1,6 +1,7 @@
 package controllers;
 
 
+import java.util.HashMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -8,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.paint.Color;
 import models.FriendModel;
+import models.SignInModel;
 import models.UPModel;
 
 public class FriendController {
@@ -24,19 +26,24 @@ public class FriendController {
 	private Button exit;
 	@FXML
 	private Label friend;
+	@FXML
+	private Label suggestions;
+
 	private SceneController scenecontroller = new SceneController();
+	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
+	private UPModel model = UserProfileInfo.get(SignInModel.curUsername);
 	
 	@FXML
 	public void initialize()
 	{
 		friend.setText(FriendModel.userID);
 		friend.setTextFill(Color.BLUE);
+		suggestions.setText(UserProfileInfo.get(FriendModel.userID).interestsToString());
 	}
 	
 	@FXML
 	public void processSignOut(ActionEvent event)
 	{
-		
 		try{scenecontroller.newSignInPage(event, signout);}catch(Exception e){e.printStackTrace();}
 	}
 	
@@ -55,14 +62,14 @@ public class FriendController {
 	@FXML 
 	public void processFollow(ActionEvent event)
 	{
-		if (!UPModel.friends.contains(friend.getText()))
-			UPModel.friends.add(friend.getText());
+		if (!model.friends.contains(friend.getText()))
+			model.friends.add(friend.getText());
 	}
 	
 	@FXML 
 	public void processUnfollow(ActionEvent event)
 	{
-		if (UPModel.friends.contains(friend.getText()))
-			UPModel.friends.remove(friend.getText());
+		if (model.friends.contains(friend.getText()))
+			model.friends.remove(friend.getText());
 	}
 }

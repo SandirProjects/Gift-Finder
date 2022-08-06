@@ -8,9 +8,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import models.CNUNModel;
-import models.UPModel;
+import models.SignInModel;
 
 public class CNUNController {
+	
 	@FXML
 	private PasswordField oldpass;
 	@FXML
@@ -32,7 +33,8 @@ public class CNUNController {
 	public void processPW(ActionEvent event) throws IOException
 	{
 		password = oldpass.getText();
-		if(model.getUserProfileInfo().get(UPModel.userID).contentEquals(password))
+		//if(model.getUserProfileInfo().get(UPModel.userID).contentEquals(password))
+		if(model.getUserProfileInfo().get(SignInModel.curUsername).userPass.equals(password))
 		{
 			newusernamelbl.setVisible(true);
 			newusername.setVisible(true);
@@ -47,8 +49,8 @@ public class CNUNController {
 	public void processNewUN(ActionEvent event) throws IOException
 	{
 		username = newusername.getText();
-		System.out.println(username + " " + UPModel.userID);
-		if(UPModel.userID.contentEquals(username))
+		System.out.println(username + " " + SignInModel.curUsername);
+		if(SignInModel.curUsername.contentEquals(username))
 		{
 			scenecontroller.ErrorPopup3(event);
 		}

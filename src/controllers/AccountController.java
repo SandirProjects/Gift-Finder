@@ -8,8 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.MenuItem;
 import javafx.scene.paint.Color;
-import models.UPModel;
-
+import models.SignInModel;
 public class AccountController {
 	
 	@FXML
@@ -27,7 +26,7 @@ public class AccountController {
 	@FXML
 	public void initialize()
 	{
-		acctusername.setText(UPModel.userID);
+		acctusername.setText(SignInModel.curUsername);
 		acctusername.setTextFill(Color.BLUE);
 	}
 	
@@ -51,7 +50,6 @@ public class AccountController {
 	@FXML
 	public void processSignOut(ActionEvent event)
 	{
-		
 		try{scenecontroller.newSignInPage(event, signout);}catch(Exception e){e.printStackTrace();}
 	}
 }

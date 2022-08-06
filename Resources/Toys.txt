@@ -9,7 +9,6 @@ Playmobil
 Rasti
 Rokenbok
 Stickle bricks
-STIKFAS
 Tinkertoy
 Tog'l
 Zaks
@@ -55,7 +54,7 @@ Little People
 Monster in My Pocket
 Playmobil
 Power Rangers
-The Smurfs merchandising
+The Smurfs
 Stretch Armstrong
 Teenage Mutant Ninja Turtles
 Toy soldier
@@ -75,7 +74,6 @@ Stickers
 African dolls
 American Girl
 Amish doll
-Anatomically correct doll
 Apple doll
 Art doll
 Baby Alive
@@ -87,7 +85,7 @@ Cabbage Patch Kids
 Celebrity doll
 Inuit doll
 Japanese traditional dolls
-Jumping jack 
+Jumping jack
 Lupita dolls
 Mannequin
 Matryoshka doll
@@ -148,7 +146,7 @@ Battleship
 Candy Land
 Chutes and Ladders
 Clue
-Concentration 
+Concentration
 Connect Four
 Dominoes
 Dungeons & Dragons
@@ -174,10 +172,10 @@ Bilibo
 Bop It
 Bungee balls
 Clackers
-Contact juggling 
+Contact juggling
 Corn Popper
 Cozy Coupe
-Devil Sticks 
+Devil Sticks
 Footbag
 Frisbee
 Gee-haw whammy diddle
@@ -214,7 +212,7 @@ Rubik's Cube
 Tangrams
 Chemistry set
 Etch A Sketch
-Jacob's ladder 
+Jacob's ladder
 Kaleidoscope
 Magic 8-Ball
 Sea Monkeys
@@ -231,14 +229,13 @@ Toy rattle
 Whistle
 Whirly tube
 Beyblade
-Chinese yo-yo 
+Chinese yo-yo
 Euler's Disk
 Fidget Spinner
-Frisbee 
+Frisbee
 Gyroscope
 Hula hoop
 Magnet Space Wheel
 Pinwheel
 Top
 Yo-yo
-

@@ -69,7 +69,14 @@
          <children>
             <ScrollPane layoutX="25.0" layoutY="383.0" prefHeight="470.0" prefWidth="350.0">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="335.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="335.0">
+                     <children>
+                        <Label fx:id="interests" alignment="TOP_LEFT" layoutX="5.0" layoutY="2.0" prefHeight="550.0" prefWidth="330.0">
+                           <font>
+                              <Font name="Monospaced Regular" size="12.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
                </content>
             </ScrollPane>
             <ToolBar layoutX="25.0" layoutY="350.0" prefHeight="33.0" prefWidth="350.0">

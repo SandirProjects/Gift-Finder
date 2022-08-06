@@ -35,12 +35,12 @@
       </ImageView>
       <Pane layoutX="400.0" prefHeight="900.0" prefWidth="400.0" style="-fx-background-color: #e4f3fd;">
          <children>
-            <TextField fx:id="username" layoutX="47.0" layoutY="400.0" onAction="#processUser" prefHeight="33.0" prefWidth="307.0" promptText="Username">
+            <TextField fx:id="username" layoutX="47.0" layoutY="400.0" prefHeight="33.0" prefWidth="307.0" promptText="Username">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="password" layoutX="47.0" layoutY="450.0" onAction="#processUser" prefHeight="33.0" prefWidth="307.0" promptText="Password">
+            <PasswordField fx:id="password" layoutX="47.0" layoutY="450.0" onAction="#processPassword" prefHeight="33.0" prefWidth="307.0" promptText="Password">
                <font>
                   <Font name="Georgia" size="12.0" />
                </font>

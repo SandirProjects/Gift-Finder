@@ -1,4 +1,3 @@
-
 Backpacks
 Bags
 Baseball
@@ -9,51 +8,49 @@ Bats
 Clubs
 Bikes
 Binoculars
-Boards
+Skateboard
+Surfboard
 Boats
 Carts
 Climbing Equipment
 Walkie talkie
 Compass
-Containers
 Darts	
 Fishing Rods
-Fishing Tackle	
+Fishing Tackle
 Flying Disks
-Footwear
 Gloves
 Goal Posts
-Googles	
-Harnesses
+Goggles
+Harness
 Helmets
 Headgear
 Jerseys
-Lifejackets	
+Life jacket
 Lights
-Locks	
+Locks
 Mats
-Nets	
+Nets
 Paddles
-Poles	
+Poles
 Prosthetics
-Protective Clothing	
+Protective Clothing
 Protective Equipment
-Pucks	
+Pucks
 Pumps
-Racquets	
+Racquet
 Rescue Equipment
 Ropes
-Cords	
+Cords
 Sails
-Skates	
+Skates
 Skis
-Sleds	
+Sleds
 Sleeping Bags
-Sportswear	
-Hockey sticks)
-Sunglasses	
+Hockey sticks
+Sunglasses
 Sunscreen
 Ping pong table
 Tents
-Towels	
+Towels
 Training Equipment

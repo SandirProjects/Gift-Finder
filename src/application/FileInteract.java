@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Scanner;
 
+import models.UPModel;
+
 public class FileInteract 
 {
 	private String filepath;
@@ -29,10 +31,12 @@ public class FileInteract
 		scan.close();
 		
 	}
-	public void processGUP(Map<String,String> UserProfileInfo) throws IOException
+	public void processGUP(Map<String, UPModel/*String*/> UserProfileInfo) throws IOException
 	{
 		File file = new File(filepath);
 		Scanner scan = new Scanner(file);
+		UPModel user;
+		
 		while(scan.hasNext())
 		{
 			String token = scan.next();
@@ -79,11 +83,14 @@ public class FileInteract
 					System.out.println("ERROR");
 				}
 			}
-			UserProfileInfo.put(username, password);
+			user = new UPModel(username, password);
+			//user.userPass = password;
+			UserProfileInfo.put(username, user);
+			//UserProfileInfo.put(username, password);
 		}
 		scan.close();
 	}
-	public void processSUP(Map<String,String> UserProfileInfo) throws IOException
+	public void processSUP(Map<String, UPModel/*String*/> UserProfileInfo) throws IOException
 	{
 		folder.mkdir();
 		file = new File(folder, "UserProfileData.txt");
@@ -95,11 +102,11 @@ public class FileInteract
 			file.createNewFile();
 			FileWriter printer = new FileWriter(file, false);
 			printer.write('{');
-			for(Map.Entry<String,String> entry : UserProfileInfo.entrySet())
+			for(Map.Entry<String, UPModel /*String*/> entry : UserProfileInfo.entrySet())
 			{
 				printer.write(entry.getKey());
 				printer.write('=');
-				printer.write(entry.getValue());
+				printer.write(entry.getValue().userPass); //entry.getValue()
 				printer.write(", ");
 			}
 			printer.write('}');

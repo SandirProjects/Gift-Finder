@@ -2,6 +2,7 @@ package models;
 
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Map;
 
 import application.FileInteract;
@@ -10,9 +11,9 @@ public class CAModel {
 	
 	
 	private FileInteract fileinteract = new FileInteract();
-	private Map<String,String> UserProfileInfo = SignInModel.UserProfileInfo;
+	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
 	
-	public Map<String,String> getMap()
+	public Map<String, UPModel/*String*/> getMap()
 	{
 		return UserProfileInfo;
 	}
@@ -38,7 +39,9 @@ public class CAModel {
 	}
 	public void addUser(String username, String password)
 	{
-		UserProfileInfo.put(username, password);
+		SignInModel.curUsername = username;
+		UPModel user = new UPModel(username, password);
+		UserProfileInfo.put(username, user/*password*/);
 		try{setUserProfileInfo();}catch(Exception e){e.printStackTrace();}
 	}
 

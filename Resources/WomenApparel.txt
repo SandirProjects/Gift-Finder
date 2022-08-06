@@ -32,17 +32,17 @@ Sun Dress
 Little Black Dress
 Coat dress
 Corset dress
-Balloon Dress 
+Balloon Dress
 Bouffant dress
 Paneled dress
 Handkerchief hem Dress
 Gathered dress
-Kaftan Dress 
+Kaftan Dress
 Pillowcase dress
-Slip Dress 
+Slip Dress
 Shirt dress
 Ball gown
-Party dress 
+Party dress
 Off Shoulder Dress
 One shoulder dress
 Strapless Dress
@@ -97,13 +97,13 @@ Skinny jeans
 Tapered jeans
 Boot Cut Jeans
 Flared jeans
-Baggy jeans 
+Baggy jeans
 Mom jeans
 Boyfriend jeans
-Stovepipe jeans 
+Stovepipe jeans
 Cigarette jeans
 Kick flare jeans
-Bell bottom jeans 
+Bell bottom jeans
 Relaxed fit
 Classic fit jeans
 Slim Fit
@@ -124,17 +124,17 @@ Ankle length jeans
 Capri
 Gaucho
 Retro jeans
-Sand blasted jeans 
-Dirty washed jeans 
-Tinted jeans 
+Sand blasted jeans
+Dirty washed jeans
+Tinted jeans
 Slub
-Whisker washed jeans 
+Whisker washed jeans
 Ripped jeans
 Frayed jeans
 Carpenter jeans
 Corded jeans
 Lace-up jeans
-Pintuck jeans 
+Pintuck jeans
 Cuffed jeans
 Asymmetrical top
 Off shoulder top 
@@ -146,8 +146,8 @@ Body suit top
 Bustier top
 Camisole top
 Cape top
-Cardigans 
-Sweaters 
+Cardigans
+Sweaters
 Crop top
 Choker top
 Corset top
@@ -156,7 +156,7 @@ Cold-shouldered top
 Draped blouse
 Empire line top
 Flashdance top
-Halter top 
+Halter top
 Henley neck top
 High Low top
 Kaftan top
@@ -214,7 +214,7 @@ Suit jacket
 Trucker Jacket
 Tuxedo jacket
 Waistcoat
-Waterfall collar jackets 
+Waterfall collar jackets
 Windbreaker
 Dress pants
 Overalls
@@ -239,12 +239,12 @@ Camisole
 Corsets
 Chemise
 Garter belt
-Petticoat 
-Shapers 
+Petticoat
+Shapers
 Ballet flat shoes
 Ballerina shoes
 Bathroom slippers
-Birkenstock Footwear
+Birkenstock
 Block heel shoes
 Boots
 Brogue shoes
@@ -253,11 +253,10 @@ Chelsea boots
 Clogs shoes
 Cowboy boots
 Crocs™ shoes
-Converse shoes
+Converse
 Dress Shoes
 Espadrille
 Flats
-Gladiator footwear
 Hiking shoes
 Chunky boots
 Jellies
@@ -278,9 +277,9 @@ Sandals
 Slides
 Sneakers
 Slingback shoes
-Slip-ons 
+Slip-ons
 Snow boots
-Stiletto shoes 
+Stiletto shoes
 Suede Shoes
 Wedge shoes
 Wallet
@@ -298,7 +297,7 @@ V-neck one-piece
 Swim dress
 Strapless one-piece
 One-shoulder
-Long-sleeve one-piece			
+Long-sleeve one-piece		
 Cover-up
 Bandeau top
 Cutout
@@ -318,27 +317,27 @@ Crew length socks
 Over the Calf socks
 Knee high socks
 Knee socks
-Over the knee socks 
+Over the knee socks
 Thigh high socks
-Grip socks 
+Grip socks
 Compression socks
 Loafer socks
-Leg warmer socks 
+Leg warmer socks
 Liner socks
-Bikini Panty  
+Bikini Panty
 Boy Shorts
 Briefs
 Booty Shorts
 Butt lifter Panty
 Cheeky Panty
-G string panties 
-High Waist Brief Shaper 
-High cut briefs 
-Hipster 
+G string panties
+High Waist Brief Shaper
+High cut briefs
+Hipster
 Maternity panties
 Open Crotch Panty
 Seamless panties
 Athletic underwear
-Stick-on panties 
-Thong 
+Stick-on panties
+Thong
 Teddy
