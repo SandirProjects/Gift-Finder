@@ -11,7 +11,6 @@ import models.UPModel;
 
 public class CIController {
 	
-	//FIXME: Process interests checked off
 	
 	@FXML
 	private Button submit;

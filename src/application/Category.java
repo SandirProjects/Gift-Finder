@@ -9,6 +9,7 @@ import java.util.Scanner;
 import models.SignInModel;
 
 public class Category {
+	
 	public HashMap<String, ArrayList<String>> Categories = SignInModel.Categories;
 	
 	public void categoryReader(String name, String fileName) throws FileNotFoundException

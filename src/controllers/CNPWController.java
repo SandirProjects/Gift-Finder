@@ -32,7 +32,6 @@ public class CNPWController {
 	public void processOldPass(ActionEvent event)
 	{
 		password = oldpass.getText();
-		//if(model.getUserProfileInfo().get(username).contentEquals(password))
 		if(model.getUserProfileInfo().get(username).userPass.equals(password))
 		{
 			newpass.setVisible(true);

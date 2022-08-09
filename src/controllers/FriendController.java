@@ -30,7 +30,7 @@ public class FriendController {
 	private Label suggestions;
 
 	private SceneController scenecontroller = new SceneController();
-	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
+	private HashMap<String, UPModel> UserProfileInfo = SignInModel.UserProfileInfo;
 	private UPModel model = UserProfileInfo.get(SignInModel.curUsername);
 	
 	@FXML
@@ -38,7 +38,7 @@ public class FriendController {
 	{
 		friend.setText(FriendModel.userID);
 		friend.setTextFill(Color.BLUE);
-		suggestions.setText(UserProfileInfo.get(FriendModel.userID).interestsToString());
+		suggestions.setText(UserProfileInfo.get(FriendModel.userID).interestsToString(true));
 	}
 	
 	@FXML

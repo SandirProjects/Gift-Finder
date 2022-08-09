@@ -4,14 +4,14 @@ import java.util.HashMap;
 
 public class UserSearchModel {
 	
-	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
+	private HashMap<String, UPModel> UserProfileInfo = SignInModel.UserProfileInfo;
 	
 	public String findUsers(String username)
 	{
 		 if (UserProfileInfo.get(username) == null)
 			 return "";
 		 else
-			 return UserProfileInfo.get(username).getuserID();//edit here
+			 return UserProfileInfo.get(username).getuserID();
 	}
 	
 	public String toString()

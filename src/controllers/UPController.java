@@ -36,14 +36,14 @@ public class UPController {
 	{
 		USERNAME.setText("My Interests");
 		if (UserProfileInfo.get(curUser).friends.isEmpty())
-			friends.setText("You are not follwoing anyone :(");
+			friends.setText("You are not following anyone :(");
 		else
 			friends.setText(UserProfileInfo.get(SignInModel.curUsername).friendsToString());
 		
 		if(UserProfileInfo.get(curUser).interests.isEmpty())
 			interests.setText("You have not added any interests :(");
 		else
-			interests.setText(UserProfileInfo.get(curUser).interestsToString());
+			interests.setText(UserProfileInfo.get(curUser).interestsToString(false));
 		
 	}
 	@FXML
@@ -65,6 +65,7 @@ public class UPController {
 	{
 		UserProfileInfo.get(curUser).interests.clear();
 		try{scenecontroller.startChooseInterests(event);}catch(Exception e){e.printStackTrace();}
+		try{scenecontroller.closeCurrent(event);}catch(Exception e){e.printStackTrace();}
 		try{scenecontroller.closeCurrent(event);}catch(Exception e){e.printStackTrace();}
 		try{scenecontroller.startUserProfile(event);}catch(Exception e){e.printStackTrace();}
 		

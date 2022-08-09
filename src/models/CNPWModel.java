@@ -10,10 +10,10 @@ import application.FileInteract;
 
 public class CNPWModel {
 	
-	private HashMap<String, UPModel/*String*/> UserProfileInfo = SignInModel.UserProfileInfo;
+	private HashMap<String, UPModel> UserProfileInfo = SignInModel.UserProfileInfo;
 	private FileInteract fileinteract = new FileInteract();
 	
-	public Map<String, UPModel/*String*/> getUserProfileInfo()
+	public Map<String, UPModel> getUserProfileInfo()
 	{
 		return UserProfileInfo;
 	}
@@ -25,7 +25,6 @@ public class CNPWModel {
 	{
 		if(UserProfileInfo.containsKey(username) == true)
 		{
-			//if(UserProfileInfo.get(username) == password)
 			if (UserProfileInfo.get(username).userPass.equals(password))
 			{
 				return true;
@@ -54,7 +53,6 @@ public class CNPWModel {
 	}
 	public void replaceUserPW(String username, String password)
 	{
-		//UserProfileInfo.replace(username, password);
 		UserProfileInfo.get(username).userPass = password;
 		try {
 			setUserProfileInfo();

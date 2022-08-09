@@ -33,7 +33,7 @@ public class CNUNController {
 	public void processPW(ActionEvent event) throws IOException
 	{
 		password = oldpass.getText();
-		//if(model.getUserProfileInfo().get(UPModel.userID).contentEquals(password))
+
 		if(model.getUserProfileInfo().get(SignInModel.curUsername).userPass.equals(password))
 		{
 			newusernamelbl.setVisible(true);
@@ -49,10 +49,14 @@ public class CNUNController {
 	public void processNewUN(ActionEvent event) throws IOException
 	{
 		username = newusername.getText();
-		System.out.println(username + " " + SignInModel.curUsername);
+		boolean usercheck = model.findUser(username);
 		if(SignInModel.curUsername.contentEquals(username))
 		{
 			scenecontroller.ErrorPopup3(event);
+		}
+		else if (usercheck == true)
+		{
+			try {scenecontroller.ErrorPopup3(event);}catch(Exception e){e.printStackTrace();}
 		}
 		else
 		{

@@ -16,60 +16,6 @@ public class SignInController
 	private String passID = "";
 	private SceneController scenecontrol = new SceneController();	
 	
-	/*@FXML
-	public void processUser(ActionEvent event)
-	{
-		userID = username.getText();
-		passID = password.getText();
-		if(userID == "" || passID == "")
-		{
-			if(userID != "")
-			{
-				username.setText(userID);
-				password.requestFocus();
-			}
-			else if(passID != "")
-			{
-				password.setText(passID);
-				username.requestFocus();
-			}
-			return;
-		}
-		else
-		{
-			boolean usercheck = SignInModel.findUser(userID);
-			if(usercheck == false)
-			{
-				try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-			}
-			else
-			{
-				boolean uservalidate = SignInModel.processUser(userID,passID);
-				if(uservalidate == false)
-				{
-					try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-				}
-				else if(uservalidate == true)
-				{
-					//UPModel.userID = this.userID;
-					UserProfileInfo.get(userID).userID = SignInModel.curUsername;
-					try {scenecontrol.startUserProfile(event);}catch(Exception e){e.printStackTrace();}
-					return;
-				}
-			}
-		}
-	}
-	
-	public boolean processUsername(ActionEvent event)
-	{
-		userID = username.getText();
-		boolean usercheck = SignInModel.findUser(userID);
-		
-		if (usercheck == false)
-			try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-		return usercheck;
-	}*/
-	
 	public boolean processPassword(ActionEvent event)
 	{
 		userID = username.getText();
@@ -111,28 +57,6 @@ public class SignInController
 		}
 	}
 	
-	
-	/*@FXML
-	public void signIn(ActionEvent event)
-	{
-		userID = username.getText();
-		passID = password.getText();
-		boolean usercheck = SignInModel.processUser(userID, passID);
-		if(usercheck == true)
-		{
-			
-			SignInModel.curUsername = userID;
-			System.out.println(SignInModel.curUsername);
-			try{scenecontrol.startUserProfile(event);}catch(Exception e){e.printStackTrace();}
-			userID = "";
-			passID = "";
-		}
-		else
-		{
-			try {scenecontrol.ErrorPopup1(event);}catch(Exception e){e.printStackTrace();}
-			passID = "";
-		}
-	}*/
 	@FXML 
 	public void createAccount(ActionEvent event)
 	{

@@ -3,12 +3,14 @@ package models;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import application.RandomizedSelection;
+
 public class UPModel {
 
 	public String userID;
 	public ArrayList<String> friends = new ArrayList<String>();
 	public HashMap<String, ArrayList<String>> interests = new HashMap<String, ArrayList<String>>();
-	//public static HashMap<String, FriendModel> hash = new HashMap<String, FriendModel>();
+	public RandomizedSelection suggestions= new RandomizedSelection();
 	public String userPass;
 	
 	public UPModel(String username, String pass)
@@ -26,126 +28,104 @@ public class UPModel {
 		String friendsList = "";
 		for (String s: this.friends)
 		{
-			friendsList += "*" + s + "\n";
+			friendsList += "*" + s + "\n\n";
 		}
 		return friendsList;
 	}
 	
-	public String interestsToString()
+	public String interestsToString(boolean show)
 	{	
-		String finalInt = "";
+		String finalInterests = "";
 		if (interests.get("Electronics") != null)
 		{
-			finalInt += "Electronics :\n";
-			for (String s: interests.get("Electronics"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Electronics\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Electronics")) + "\n";
 		}
 
 		if (interests.get("Jewelry") != null)
 		{
-			finalInt += "Jewelry :\n";
-			for (String s: interests.get("Jewelry"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Jewelry\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Jewelry")) + "\n";
 		
 		}
 		
 		if (interests.get("Kitchen") != null)
 		{
-			finalInt += "Kitchen :\n";
-			for (String s: interests.get("Kitchen"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Kitchen\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Kitchen")) + "\n";
+			
 		}
 		
 		if (interests.get("LawnGarden") != null)
 		{
-			finalInt += "LawnGarden :\n";
-			for (String s: interests.get("LawnGarden"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Lawn and Garden\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("LawnGarden")) + "\n";
 		}
 		
 		if (interests.get("Men") != null)
 		{
-			finalInt += "Men :\n";
-			for (String s: interests.get("Men"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Men's Apparel\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Men")) + "\n";
+			
 		}
 		
 		if (interests.get("Pet") != null)
 		{
-			finalInt += "Pet :\n";
-			for (String s: interests.get("Pet"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Pets\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Pet")) + "\n";
 		}
 		
 		if (interests.get("Snacks") != null)
 		{
-			finalInt += "Snacks :\n";
-			for (String s: interests.get("Snacks"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Snacks\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Snacks")) + "\n";
 		}
 		
 		if (interests.get("Sports") != null)
 		{
-			finalInt += "Sports :\n";
-			for (String s: interests.get("Sports"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Sports\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Sports")) + "\n";
 		}
 		
 		if (interests.get("Tools") != null)
 		{
-			finalInt += "Tools :\n";
-			for (String s: interests.get("Tools"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Tools\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Tools")) + "\n";
 		}
 		
 		if (interests.get("Toys") != null)
 		{
-			finalInt += "Toys :\n";
-			for (String s: interests.get("Toys"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Toys\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Toys")) + "\n";
 		}
 		
 		if (interests.get("VideoGames") != null)
 		{
-			finalInt += "VideoGames :\n";
-			for (String s: interests.get("VideoGames"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Video Games\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("VideoGames")) + "\n";
 		}
 		
 		if (interests.get("Women") != null)
 		{
-			finalInt += "Women :\n";
-			for (String s: interests.get("Women"))
-			{
-				finalInt += "\t*" + s + "\n";
-			}
+			finalInterests += "Women's Apparel\n\n";
+			if (show)
+				finalInterests += suggestions.randomizedSuggestions(interests.get("Women")) + "\n";
 		}
 		
 		
 		
 		
-		return finalInt;
+		return finalInterests;
 	}
 }

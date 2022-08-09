@@ -3,15 +3,28 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CNPWController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CNPWController">
    <children>
-      <Label layoutX="35.0" layoutY="71.0" text="Enter Your Password: " />
-      <Label fx:id="newpasslbl" layoutX="35.0" layoutY="102.0" text="Enter New Password:" visible="false" />
-      <Label fx:id="confpasslbl" layoutX="35.0" layoutY="133.0" text="Confirm New Password:" visible="false" />
-      <PasswordField fx:id="oldpass" layoutX="168.0" layoutY="67.0" onAction="#processOldPass" />
-      <PasswordField fx:id="newpass" layoutX="168.0" layoutY="98.0" onAction="#processNewPass" visible="false" />
-      <PasswordField fx:id="confpass" layoutX="168.0" layoutY="129.0" onAction="#processConfPass" visible="false" />
-      <Label fx:id="error" layoutX="82.0" layoutY="21.0" prefHeight="25.0" prefWidth="172.0" />
+      <Label layoutX="15.0" layoutY="70.0" text="Enter Your Password: ">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="newpasslbl" layoutX="22.0" layoutY="105.0" text="Enter New Password:" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></Label>
+      <Label fx:id="confpasslbl" layoutX="8.0" layoutY="135.0" text="Confirm New Password:" visible="false">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></Label>
+      <PasswordField fx:id="oldpass" layoutX="168.0" layoutY="65.0" onAction="#processOldPass" />
+      <PasswordField fx:id="newpass" layoutX="168.0" layoutY="100.0" onAction="#processNewPass" visible="false" />
+      <PasswordField fx:id="confpass" layoutX="168.0" layoutY="130.0" onAction="#processConfPass" visible="false" />
+      <Label fx:id="error" layoutX="82.0" layoutY="14.0" prefHeight="25.0" prefWidth="172.0" textAlignment="CENTER">
+         <font>
+            <Font name="Monospaced Bold" size="12.0" />
+         </font></Label>
    </children>
 </AnchorPane>
