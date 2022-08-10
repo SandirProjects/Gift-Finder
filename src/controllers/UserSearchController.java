@@ -1,5 +1,7 @@
- package controllers;
-
+package controllers;
+/**
+ * This controller handles the view allowing the user to search other users.
+ */
 import java.io.IOException;
 import java.util.HashMap;
 import javafx.event.ActionEvent;

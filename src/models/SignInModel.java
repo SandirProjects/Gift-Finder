@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class handles the data from the Sign In view.
+ */
 
 import java.io.IOException;
 import java.util.ArrayList;

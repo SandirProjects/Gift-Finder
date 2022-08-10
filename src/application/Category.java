@@ -7,7 +7,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import models.SignInModel;
-
+/**
+ * This class handles processing user interests.
+ * @author sandi
+ *
+ */
 public class Category {
 	
 	public HashMap<String, ArrayList<String>> Categories = SignInModel.Categories;

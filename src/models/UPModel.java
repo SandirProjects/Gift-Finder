@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class handles the data from the user profile view.
+ */
 import java.util.ArrayList;
 import java.util.HashMap;
 

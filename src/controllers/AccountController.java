@@ -1,7 +1,8 @@
 package controllers;
-
+/**
+ * This is a controller class that handles the account page view for the application.
+ */
 import java.io.IOException;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles the view allowing the user to sign in to the application.
+ */
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;
@@ -44,7 +46,6 @@ public class SignInController
 		{
 			
 			SignInModel.curUsername = userID;
-			System.out.println(SignInModel.curUsername);
 			try{scenecontrol.startUserProfile(event);}catch(Exception e){e.printStackTrace();}
 			userID = "";
 			passID = "";

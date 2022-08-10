@@ -8,6 +8,12 @@ import java.util.Scanner;
 
 import models.UPModel;
 
+/** 
+ * This class creates a .txt file that holds user profile information.
+ * The program reads and writes to the file to maintain data integrity.
+ * @author sandi
+ *
+ */
 public class FileInteract 
 {
 	private String filepath;

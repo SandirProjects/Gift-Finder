@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class handles the data from the User Search view.
+ */
 import java.util.HashMap;
 
 public class UserSearchModel {

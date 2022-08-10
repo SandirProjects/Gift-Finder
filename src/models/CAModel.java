@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class processes the data from the create account view.
+ */
 
 import java.io.IOException;
 import java.util.HashMap;

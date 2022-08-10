@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles the view that allows the user to add friends.
+ */
 
 import java.util.HashMap;
 import javafx.event.ActionEvent;

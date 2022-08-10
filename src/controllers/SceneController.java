@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles all changes of view for the application.
+ */
 import java.io.IOException;
 
 import javafx.event.ActionEvent;

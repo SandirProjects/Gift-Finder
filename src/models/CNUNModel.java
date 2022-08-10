@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class handles the data from the create new username view.
+ */
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

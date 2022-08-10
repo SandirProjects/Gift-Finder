@@ -7,7 +7,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-
+/**
+ * This class handles initiating the view of the application.
+ * @author sandi
+ *
+ */
 
 public class SignInMain extends Application {
 	@Override

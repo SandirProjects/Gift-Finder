@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles the view for each user's profile.
+ */
 import java.util.HashMap;
 
 import javafx.event.ActionEvent;

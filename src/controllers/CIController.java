@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles the view allowing the user to select their interests.
+ */
 import java.util.HashMap;
 import application.Category;
 import javafx.event.ActionEvent;

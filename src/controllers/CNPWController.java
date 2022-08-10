@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This controller handles the view for the user to change their password.
+ */
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

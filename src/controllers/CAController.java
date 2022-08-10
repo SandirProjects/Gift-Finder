@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This is a controller class that handles the create account view for the application.
+ */
 import application.FileInteract;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

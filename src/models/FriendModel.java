@@ -1,5 +1,7 @@
 package models;
-
+/**
+ * This class handles the data from the friend view.
+ */
 import java.util.ArrayList;
 
 public class FriendModel {

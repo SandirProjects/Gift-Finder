@@ -1,5 +1,7 @@
 package controllers;
-
+/**
+ * This class handles the view allowing the user to change their username.
+ */
 import java.io.IOException;
 
 import javafx.event.ActionEvent;

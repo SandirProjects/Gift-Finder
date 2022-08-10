@@ -2,7 +2,11 @@ package application;
 
 import java.util.ArrayList;
 import java.util.Random;
-
+/**
+ * This class handles gift suggestions for the user.
+ * @author sandi
+ *
+ */
 public class RandomizedSelection {
 	
 	
